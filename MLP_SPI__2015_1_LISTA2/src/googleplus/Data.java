@@ -12,7 +12,8 @@ public class Data {
 	}
 	
 	public String toString() {
-		if(this.dia <= 0 || this.mes <= 0 || this.ano <= 0) {
+		if(this.dia <= 0 || this.mes <= 0 || this.ano <= 0
+				|| this.dia > 31 || this.mes > 12) {
 			throw new IllegalArgumentException("Valores inv‡lidos");
 		}
 		
