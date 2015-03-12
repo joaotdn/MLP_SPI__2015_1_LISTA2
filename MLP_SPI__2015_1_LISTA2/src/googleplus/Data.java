@@ -13,7 +13,7 @@ public class Data {
 	
 	public String toString() {
 		if(this.dia <= 0 && this.mes <= 0 && this.ano <= 0) {
-			throw new IllegalArgumentException("Valores inv‡lidos para data");
+			throw new IllegalArgumentException("Valores inv‡lidos");
 		}
 		
 		return this.dia + "/" + this.mes + "/" + this.ano;
